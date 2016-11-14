@@ -530,7 +530,7 @@ while (i<LD),
                         fprintf(FRET_fid_lengthI,'%d %d\n',totalnumber,L(j));
                         
                         bind = L(1)  - flowstart;
-                        
+                        bind = round(bind);
                         fprintf(flow_time,'%d %d\n',bind,i);
                     end % end of sized(2)
                 end % end of if sized
