@@ -529,10 +529,11 @@ while (i<LD),
                         fprintf(Cy5_fid_traI,'%d\n',ave_Cy5/totalnumber);
                         fprintf(FRET_fid_lengthI,'%d %d\n',totalnumber,L(j));
                         
-                        bind = L(1)  - flowstart;
-                        bind = round(bind);
-                        fprintf(flow_time,'%d %d\n',bind,i);
+
                     end % end of sized(2)
+                    bind = (L(1)  - flowstart)./int_time;
+                    bind = round(bind);                                     %to make sure that we save it consistently to the frame-number and not the time (s).
+                    fprintf(flow_time,'%d %d\n',bind,i);
                 end % end of if sized
                 
                 sized=floor(size(N)/2);% right clicks
