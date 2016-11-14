@@ -1,0 +1,8 @@
+- If events happen in first few frames, they get rounded off to the first frame
+- error for the handles of the plots may occur at times
+- if it picks nothing up, press x, it goes few traces back
+- find more user friendly way to bypass this problem (when it picks nothing up)
+- improve method of finding the "borderline". Maybe take the 100 lowest values or fit two Gaussians on the histogram
+- fix the "go to" button
+- combine Cy5 and Cy3
+- Fix the crash when 2----1 click, or don't do that at all
